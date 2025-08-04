@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('sea-3840x2160-4k-hd-wallpaper-ocean-water-sunset-sunrise-sun-wave-601.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-container {
+  background: rgba(255, 255, 255, 0.15); /* light glass look */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  padding: 35px 40px;
+  border-radius: 18px;
+  max-width: 500px;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-left-tittle h2 {
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.contact-left-tittle hr {
+  width: 60px;
+  height: 4px;
+  background: #FF914D;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto 25px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-inputs {
+  border: none;
+  padding: 14px 18px;
+  font-size: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.contact-inputs:focus {
+  outline: none;
+  box-shadow: 0 0 5px #5DB3C4;
+}
+
+textarea.contact-inputs {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-left button {
+  background: linear-gradient(to right, #FF914D, #FFCD70);
+  border: none;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-left button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 145, 77, 0.5);
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 25px;
+  }
+
+  .contact-left-tittle h2 {
+    font-size: 22px;
+  }
+}
